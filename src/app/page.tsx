@@ -7,7 +7,7 @@ import SplitAbout from '@/components/sections/about/SplitAbout';
 import TeamCardOne from '@/components/sections/team/TeamCardOne';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { SportsIcon } from 'lucide-react';
+import { Sprout } from 'lucide-react';
 
 const assetMap = [
   {"id": "hero-image", "url": "https://images.pexels.com/photos/2072181/pexels-photo-2072181.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Charming birthday greeting card layout with macarons, flowers, and gift box."},
@@ -42,7 +42,7 @@ export default function Page() {
             title="About Anish"
             description="Anish is a happy-go-lucky person who loves to celebrate."
             bulletPoints={[
-              { title: "Loves Sports", description: "An avid cricket fan.", icon: SportsIcon },
+              { title: "Loves Sports", description: "An avid cricket fan.", icon: Sprout },
               { title: "Traveler", description: "Enjoys exploring new places." }
             ]}
             imageSrc={assetMap.find(a => a.id === "about-image")?.url ?? "/public/images/placeholder.webp"}
